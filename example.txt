@@ -1,0 +1,34 @@
+mutation signUp {
+  signUp(username: "john", email: "john@john.john", password: "john123"){
+   token
+  }
+}
+mutation signIn {
+  signIn(login: "john", password: "john123"){
+   token
+  }
+}
+
+mutation createMessage {
+  createMessage(text: "john123"){
+   text
+    user {
+      email
+    }
+  }
+} 
+ 
+ 
+
+mutation deleteUser {
+  deleteUser(text: "john123"){
+   text
+    user {
+      email
+    }
+  }
+} 
+
+{
+  "x-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqb2huQGpvaG4uam9obiIsInVzZXJuYW1lIjoiam9obiIsInJvbGUiOm51bGwsImlhdCI6MTYyMDc1NDEwNywiZXhwIjoxNjIwNzU1OTA3fQ.DFsu6_XRYjdLeYO82_Hejr-xOYCCL50IQ8wW5QGNfBw"
+}
