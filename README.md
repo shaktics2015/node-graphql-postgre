@@ -1,1 +1,1 @@
-# NodeJs(TS) Boilerplate using GraphQL
+# NodeJs Boilerplate using GraphQL
